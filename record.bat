@@ -1,0 +1,1 @@
+python -m rl_zoo3.record_video --algo ppo --env HalfCheetah-v5 -n 1000 --seed 42 -f logs/ppo_ckan_state_input/ --deterministic --load-best

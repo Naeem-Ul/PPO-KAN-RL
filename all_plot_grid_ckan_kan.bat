@@ -1,0 +1,1 @@
+python scripts/all_plots.py -a ppo -e HalfCheetah-v4 -f logs/ppo_ckan_kan_state_input logs/ppo_ckan_kan_grid_2 logs/ppo_ckan_kan_grid_5 -max 1_000_000 -print -median

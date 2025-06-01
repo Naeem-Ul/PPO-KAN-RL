@@ -1,0 +1,1 @@
+python -m rl_zoo3.train --algo ppo --env HalfCheetah-v4 -conf hyperparams/python/ppo_CKAN_KAN_state_input_config.py --device cuda:0 --seed 42 -f logs/temp --n-timesteps 1_000_000 --vec-env subproc --log-interval 10_000 --eval-freq 10_000 --save-freq -1
