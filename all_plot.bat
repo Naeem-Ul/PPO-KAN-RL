@@ -1,0 +1,1 @@
+python scripts/all_plots.py -a ppo -e HalfCheetah-v4 Hopper-v4 Swimmer-v4 -f logs/ logs/ppo_kan logs/ppo_ckan_kan_state_input -max 1_000_000 -print -median

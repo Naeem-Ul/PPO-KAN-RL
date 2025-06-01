@@ -1,0 +1,20 @@
+default_settings: &default_settings
+  normalize: true
+  n_envs: 1
+  policy: PPO_KAN.PPO_KAN
+  n_timesteps: !!float 1e6
+  batch_size: 1_000
+  n_steps: 1_000
+  gamma: 0.98
+  learning_rate: 0.0003
+  n_epochs: 100
+  policy_kwargs: "dict(grid=2,
+                       k=3)"
+  # net_arch: null # Use same with default architecture of PPO net_arch=dict(pi=[64, 64], vf=[64, 64])
+
+# V-4
+HalfCheetah-v4:
+  <<: *default_settings
+  policy_kwargs: "dict(grid=1,
+                          k=3)"
+
